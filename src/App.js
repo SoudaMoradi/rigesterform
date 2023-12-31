@@ -19,7 +19,7 @@ function App() {
                   <div className="h-full flex justify-content-center align-items-center">
                       <div className="flex flex-column justify-content-center align-items-center w-5 bg-pink-100 border-round-xl shadow-2 p-5 gap-3">
                           <div className="p-3">
-                              <span>شرکت رها صنعت</span>
+                              <span>  تناشرکت رها صنعت</span>
                           </div>
                           <div className="flex flex-column">
                               <label>نام کاربری</label>
