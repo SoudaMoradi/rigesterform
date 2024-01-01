@@ -7,10 +7,16 @@ const useStorage = ()=>{
         localStorage.setItem(key, JSON.stringify(value));
         window.dispatchEvent(new Event("storage"));
     };
+    const getStorage=(key)=>{
+        return JSON.parse(localStorage.getItem(key));
+    };
 
     const setUser=(data)=>{
         localStorage.setItem("user", JSON.stringify(data));
         window.dispatchEvent(new Event("storage"));
+    };
+    const getUser=()=>{
+        return JSON.parse(localStorage.getItem("user"));
     };
     const setConfigs=(data)=>{
         localStorage.setItem("app_configs", JSON.stringify(data));
@@ -20,15 +26,6 @@ const useStorage = ()=>{
         localStorage.clear();
         window.dispatchEvent(new Event("storage"));
     };
-
-    const getStorage=(key)=>{
-        return JSON.parse(localStorage.getItem(key));
-    };
-
-    const getUser=()=>{
-        return JSON.parse(localStorage.getItem("user"));
-    };
-
     const getConfigs=()=>{
         return JSON.parse(localStorage.getItem("app_configs"));
     };
